@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Playas Limpias Puerto Rico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Playas Limpias Puerto Rico</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre la causa</a></li>
+        <li><a href="help.html">Cómo ayudar</a></li>
+        <li><a href="resources.html">Recursos/Noticias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- FOTO SIMPLE, SIN COSAS RARAS -->
+    <img src="playa.png"
+         alt="Playa en Puerto Rico"
+         style="width:100%; max-width:800px; display:block; margin:20px auto;">
+
+    <h2>Cuidar las playas es responsabilidad de todos</h2>
+    <p>
+      Puerto Rico depende de sus playas para el ambiente,
+      el turismo y la comunidad.
+    </p>
+
+    <h3>🌊 Misión</h3>
+    <p>
+      Motivar a las personas a mantener limpias las playas para proteger
+      la vida marina y la salud pública.
+    </p>
+
+    <h3>♻ Mensaje</h3>
+    <p>
+      Reduce plásticos, recoge tu basura y participa en actividades comunitarias.
+    </p>
+
+    <h3>🤝 Acción</h3>
+    <button onclick="sumar()">Apoyar la causa</button>
+    <p id="contador">Personas que apoyan: 0</p>
+
+    <h2>Eventos próximos</h2>
+    <ul>
+      <li>Limpieza en Isla Verde — Sábado 9:00 AM</li>
+      <li>Limpieza en Rincón — Domingo 10:00 AM</li>
+    </ul>
+
+  </main>
+
+  <footer>
+    <p>Proyecto estudiantil — 2025</p>
+  </footer>
+
+  <script>
+    var apoyos = 0;
+    function sumar() {
+      apoyos = apoyos + 1;
+      document.getElementById("contador").innerText =
+        "Personas que apoyan: " + apoyos;
+    }
+  </script>
+
+</body>
+</html>
